@@ -1,6 +1,4 @@
-﻿using Tyuiu.ZelenovaIV.Sprint5.Task2.V19.Lib;
-
-namespace Tyuiu.ZelenovaIV.Sprint5.Task2.V19.Test
+﻿namespace Tyuiu.ZelenovaIV.Sprint5.Task3.V27.Test
 {
     [TestClass]
     public sealed class DataServiceTest

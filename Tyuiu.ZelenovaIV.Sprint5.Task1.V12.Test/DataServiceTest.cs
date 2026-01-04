@@ -8,11 +8,11 @@ namespace Tyuiu.ZelenovaIV.Sprint5.Task1.V12.Test
         [TestMethod]
         public void ValidExpression()
         {
-            string path = Path.GetTempFileName();
-            FileInfo fileInfo = new FileInfo(path);
-            bool fileExists = fileInfo.Exists;
+            string path = @"C:\Users\user\AppData\Local\Temp\OutPutFileTask1.txt";
+            FileInfo fi = new FileInfo(path);
+            bool fE = fi.Exists;
             bool wait = true;
-            Assert.AreEqual(wait, fileExists);
+            Assert.AreEqual(wait, fE);
         }
     }
 }
