@@ -9,6 +9,13 @@ namespace Tyuiu.ZelenovaIV.Sprint5.Task3.V27.Lib
         public string SaveToFileTextData(int x)
         {
             string path = $@"{Path.GetTempPath()}OutPutFileTask3.bin";
+            FileInfo fileInfo = new FileInfo(path);
+            bool fileExists = fileInfo.Exists;
+
+            if (fileExists)
+            {
+                File.Delete(path);
+            }
 
             double y = Math.Pow((x - 1), 3 * x + 1);
             y = Math.Round(y, 3);
